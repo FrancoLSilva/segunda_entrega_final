@@ -1,0 +1,118 @@
+/* Estilos para mis titulos */
+
+.titles-primario {color: rgb(209, 22, 22);
+    border:none;
+    background-color: rgb(31, 97, 141);
+    font-size: 30px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+     }
+
+.titles-secundario {
+    color: white;
+    background-color: rgb(61, 64, 66);
+    font-size: 20px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+     }
+
+.titles-terciario {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+
+}
+
+.par-head{color: whitesmoke;}
+
+.par-head{background-color: rgb(31, 97, 141);}
+
+/* Estilo para mis elementos y contenedores */
+
+
+header {
+    background-color: rgb(31, 97, 141);
+    font-size: 15px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+main{background-image: url('fondo.jpg')}
+
+footer {background-color: rgb(31, 97, 141);
+        display: flex;
+        flex-direction: row;
+        justify-content:  space-evenly;
+}
+
+#table-price { font-size: 15px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.redes{ text-decoration-line: none;
+color: whitesmoke;}
+
+.contacto{text-decoration-line: none;
+color: whitesmoke;    
+
+}
+
+
+.sec-info {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+/* Transformaciones */
+
+.nav-link {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease;
+}
+
+.nav-link:hover {
+  transform: scale(2);
+}
+
+img {display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease;
+}
+
+img:hover {transform: scale(1.5);
+
+}
+
+.img-galery {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150 px;
+    height: 200px;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease;
+
+}
+
+.img-galery:hover{ transform: scale(1.5);
+}
