@@ -1,4 +1,4 @@
-/* Estilos para mis titulos */
+/* ESTILOS PARA MIS TITULOS */
 
 .titles-primario {color: rgb(209, 22, 22);
     border:none;
@@ -10,6 +10,9 @@
      }
 
 .titles-secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-color: rgb(61, 64, 66);
     font-size: 20px;
@@ -23,131 +26,138 @@
     font-size: 15px;
     font-weight:600;
     font-family: 'Oswald', sans-serif;
-    text-align: left;
-
+    text-align: center;
 }
 
-.par-head{color: whitesmoke;}
-
-.par-head{background-color: rgb(31, 97, 141);}
-
-/* Estilo para mis elementos y contenedores */
-
-
-header {
-    background-color: rgb(31, 97, 141);
+.info strong{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     font-weight:600;
     font-family: 'Oswald', sans-serif;
     text-align: center;
+}}
+
+/* ESTILOS PARA MI BODY */
+
+.head-contenedor{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    background-color: rgb(31, 97, 141);
 }
 
-.main{display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150 px;
-    height: 200px;
-    font-size: 8px;
-    font-weight:600;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+.head-contenedor .par-head strong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: whitesmoke;
+    background-color: rgb(31, 97, 141);
 }
+
 
 .main-form {background-color: rgb(214, 211, 211);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
     justify-content: center;
-    font-size: 10px;
+    align-items: center;
+    weight: 100px;;
+    font-size: 15px;
     font-weight:600;
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
 
-footer {background-color: rgb(31, 97, 141);
-        display: flex;
-        flex-direction: row;
-        justify-content:  space-evenly;
-}
+/*  HOME */
 
-#table-price { font-size: 15px;
-    font-weight: 600;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-}
-
-p {
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: center;          
-    color: rgb(15, 15, 15);
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    text-decoration: none;
-    height: 6px;
-}
-
-.redes{ text-decoration-line: none;
-color: whitesmoke;}
-
-.contacto{text-decoration-line: none;
-color: whitesmoke;    
-}
-
-.sec-info {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-}
-
-/* Transformaciones */
-
-.nav-link {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-delay: 0.5s;
-    transition-timing-function: ease;
-}
-
-.nav-link:hover {
-  transform: scale(2);
-}
-
-img {display: flex;
+.main-home{
+    display: grid;
     justify-content: center;
-    align-content: center;
-    border: 5px;
-    height: 250px;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-delay: 0.5s;
-    transition-timing-function: ease;
-}
-
-img:hover {transform: scale(1.5);
-
-}
-
-.img-galery {display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150 px;
-    height: 200px;
-    justify-items: center;
     align-items: center;
+    font-size: 15px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(214, 211, 211);
+    border: none;
+}
+
+.br-main{color: rgb(214, 211, 211);
+    background-color: rgb(214, 211, 211);
+}
+
+/* GALERIA */
+
+.main-galery{
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(250px,1fr));
+    background-color: rgb(214, 211, 211);
+}
+
+.div-galery{ 
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(250px,1fr))
+    
+}
+
+.div-galery .box-galery{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.img-galery{ 
     width: 300px;
-    height: 200px;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-delay: 0.5s;
-    transition-timing-function: ease;
+    height: 150px;
+    object-fit: cover;
 }
 
-.img-galery:hover{ transform: scale(1.5);
+.img-galery:hover{ 
+    transform: scale(1.05);
 }
 
-/* Responsive */
+/* SERVICIOS */
+
+.main-price {display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(214, 211, 211);
+   
+}
+
+.table-price{
+    border: none;
+    weight: 100px;;
+    font-size: 15px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+.image-main{height: 100px;}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    color: whitesmoke;
+    background-color: rgb(31, 97, 141);
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-evenly;
+}
+
+/* RESPONSIVE */
 
 @media screen and (min-width:768px){
     .header nav main footer{
@@ -168,170 +178,168 @@ img:hover {transform: scale(1.5);
         footer {grid-area: "footer"
                            }
     }
-    
-    /* Estilos para mis titulos */
-    
-    .titles-primario {color: rgb(209, 22, 22);
-        border:none;
-        background-color: rgb(31, 97, 141);
-        font-size: 30px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-         }
-    
-    .titles-secundario {
-        color: white;
-        background-color: rgb(61, 64, 66);
-        font-size: 20px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-         }
-    
-    .titles-terciario {
-        text-decoration: none;
-        font-size: 15px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: left;
-    
-    }
-    
-    .par-head{color: whitesmoke;}
-    
-    .par-head{background-color: rgb(31, 97, 141);}
-    
-    /* Estilo para mis elementos y contenedores */
-    
-    header {
-        background-color: rgb(31, 97, 141);
-        font-size: 20px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-    
-    }
-    
-    footer {background-color: rgb(31, 97, 141)
-    
-    }
-    
-    
-    .main {
-        font-size: 30px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-    
-    }
-    
-    .main-form {background-color: rgb(214, 211, 211);
-               display: flex;
-               flex-direction: column;
-               flex-wrap: wrap;
-               justify-content: center;
-               font-size: 20px;
-               font-weight:600;
-               font-family: 'Oswald', sans-serif;
-               text-align: center;
+    /* ESTILOS PARA MIS TITULOS */
+
+.titles-primario {color: rgb(209, 22, 22);
+    border:none;
+    background-color: rgb(31, 97, 141);
+    font-size: 60px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
      }
-    
-    
-    
-    #table-price { font-size: 15px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-    
-    }
-    
-    p {display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: space-evenly;          
-        color: rgb(15, 15, 15);
-        font-size: 20px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-        text-align: left;
-        text-decoration: none;
-        height: 6px;
-    
-    }
-    
-    .par-head {display: flex;
-        background-color: rgb(31, 97, 141);
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: space-evenly;          
-        color: rgb(93, 109, 126);
-        font-size: 18px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-        text-align: left;
-        text-decoration: none;
-        height: 6px;
-    }
-    
-    ul {list-style-type: none;
-        margin: 0 5px;
-        text-decoration: none;
-    }
 
-    .ul-contacto {color: white;
-        list-style-type: none;
-        margin: 0 5px;
-        text-decoration: none;
+.titles-secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(61, 64, 66);
+    font-size: 40px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+     }
 
-    }
-    
-    
-    li  {color: rgb(8, 8, 8);
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-    }
-    
-    img {display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        width: 300px;
-        height: 200px;
-    }
-    
-    .img-galery {display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        width: 300px;
-        height: 200px;
-    }
-    
-    .sec-info {
-               font-size: 20px;
-               font-weight: 600;
-               font-family: 'Oswald', sans-serif;
-               text-align: center;
-    }
-    
-    .section{color: rgb(77, 74, 74);
-            font-size: 20px;
-            font-weight: 600;
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-    }  
+.titles-terciario {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
 
-.redes{ text-decoration-line: none;
-        color: whitesmoke;}
-        
-.contacto{text-decoration-line: none;
-        color: whitesmoke;    
-        }
+.info strong{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+/* ESTILOS PARA MI BODY */
+
+.head-contenedor{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    background-color: rgb(31, 97, 141);
+}
+
+.head-contenedor .par-head strong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: whitesmoke;
+    background-color: rgb(31, 97, 141);
+}
 
 
+.main-form {background-color: rgb(214, 211, 211);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    weight: 100px;;
+    font-size: 40px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+/*  HOME */
+
+.main-home{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(214, 211, 211);
+    border: none;
+}
+
+.br-main{color: rgb(214, 211, 211);
+    background-color: rgb(214, 211, 211);
+}
+
+/* GALERIA */
+
+.main-galery{
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(250px,1fr));
+    background-color: rgb(214, 211, 211);
+}
+
+.div-galery{ 
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(250px,1fr))
+    
+}
+
+.div-galery .box-galery{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.img-galery{ 
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img-galery:hover{ 
+    transform: scale(1.05);
+}
+
+/* SERVICIOS */
+
+.main-price {display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(214, 211, 211);
+   
+}
+
+.table-price{
+    border: none;
+    weight: 200px;;
+    font-size: 30px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+.image-main{height: 100px;}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    color: whitesmoke;
+    background-color: rgb(31, 97, 141);
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-evenly;
+}
+}
+
+
+@media screen and (min-width:1023px){
     .header nav main footer{
         grid-template-areas:
         "header header header"
@@ -349,175 +357,229 @@ img:hover {transform: scale(1.5);
                            
         footer {grid-area: "footer"
                            }
+    }
+    /* ESTILOS PARA MIS TITULOS */
+
+.titles-primario {color: rgb(209, 22, 22);
+    border:none;
+    background-color: rgb(31, 97, 141);
+    font-size: 75px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+     }
+
+.titles-secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(61, 64, 66);
+    font-size: 45px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+     }
+
+.titles-terciario {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
-    
-    /* Estilos para mis titulos */
-    
-    .titles-primario {color: rgb(209, 22, 22);
-        border:none;
-        background-color: rgb(31, 97, 141);
-        font-size: 70px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-         }
-    
-    .titles-secundario {
-        color: white;
-        background-color: rgb(61, 64, 66);
-        font-size: 30px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-         }
-    
-    .titles-terciario {
-        text-decoration: none;
-        font-size: 20px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: left;
-    
-    }
-    
-    .par-head{color: whitesmoke;}
-    
-    .par-head{background-color: rgb(31, 97, 141);}
-    
-    /* Estilo para mis elementos y contenedores */
-    
-    header {
-        background-color: rgb(31, 97, 141);
-        font-size: 40px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-    }
-    
-    footer {background-color: rgb(31, 97, 141);
-    }
-    
-    
-    .main {
-        font-size: 40px;
-        font-weight:600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-    
-    }
-    
-    
-    
-    #table-price {align-items: center;
-        font-size: 25px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-    
-    }
-    
-    p {display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: space-evenly;          
-        color: rgb(15, 15, 15);
-        font-size: 20px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-        text-align: left;
-        text-decoration: none;
-        height: 6px;
-    
-    }
-    
-    .par-head {display: flex;
-        background-color: rgb(31, 97, 141);
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: space-evenly;          
-        color: rgb(93, 109, 126);
-        font-size: 25px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-        text-align: left;
-        text-decoration: none;
-        height: 6px;
-    
-    }
-    
-    ul {list-style-type: none;
-        margin: 0 5px;
-        text-decoration: none;
-    }
 
-    .ul-contacto {color: white;
-        list-style-type: none;
-        margin: 0 5px;
-        text-decoration: none;
+.info strong{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
 
-    }
-    
-    
-    li  {color: rgb(245, 241, 241);
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-    }
-    
-    img {display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        width: 350px;
-        height: 200px;
-    }
-    
-    .img-galery {display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        width: 400px;
-        height: 300px;
-    
-    }
- 
-    #no-grid{display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        width: 600px;
-        height: 400px;}
-    
-    #galery {display: flex;
-        flex-direction: column;
-         justify-items: center;
-         align-items: center;
-        }
-    
-    .sec-info {
-               font-size: 30px;
-               font-weight: 600;
-               font-family: 'Oswald', sans-serif;
-               text-align: center;
-        
-    
-    }
-    
-    .section{color: rgb(77, 74, 74);
-            font-size: 30px;
-            font-weight: 600;
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-    }
+/* ESTILOS PARA MI BODY */
 
-.redes{ text-decoration-line: none;
-        color: whitesmoke;}
-        
-.contacto{text-decoration-line: none;
-        color: whitesmoke;    
-        }
+.head-contenedor{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    background-color: rgb(31, 97, 141);
+}
+
+.head-contenedor .par-head strong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: whitesmoke;
+    background-color: rgb(31, 97, 141);
+}
+
+
+.main-form {background-color: rgb(214, 211, 211);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    weight: 100px;;
+    font-size: 15px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+/*  HOME */
+
+.main-home{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(214, 211, 211);
+    border: none;
+}
+
+.br-main{color: rgb(214, 211, 211);
+    background-color: rgb(214, 211, 211);
+}
+
+/* GALERIA */
+
+.main-galery{
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(250px,1fr));
+    background-color: rgb(214, 211, 211);
+}
+
+.div-galery{ 
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(250px,1fr))
     
+}
+
+.div-galery .box-galery{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.img-galery{ 
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-galery:hover{ 
+    transform: scale(1.05);
+}
+
+/* SERVICIOS */
+
+.main-price {display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(214, 211, 211);
+   
+}
+
+.table-price{
+    border: none;
+    weight: 100px;;
+    font-size: 15px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+.image-main{height: 100px;}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    color: whitesmoke;
+    background-color: rgb(31, 97, 141);
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-evenly;
+}
+}
+   
+    
+
+
+/* ESTILOS PARA MI SOCIAL BAR */
+.div-social-bar{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Whatsapp: #4dc247;
+    --facebook: #3b5999;
+    --instagram: #C13584;
+    --twitter: #55acee;
+}
+
+.div-social-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.div-social-bar ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 40px;
+    text-align:center;
+}
+
+.div-social-bar ul li a{
+    display: block;
+    padding: 0 10px;
+    background: gray;
+    color: whitesmoke;
+    line-height: 50px;
+    font-size: 30px;
+    transition: .2s;
+}
+
+.div-social-bar ul:hover a{
+filter: blur(2px);
+}
+
+.div-social-bar ul a:hover{
+    transform: translateY(-2px) scale(1.05);
+    filter: none;
+}
+
+.div-social-bar ul li .icon-whatsapp:hover{
+    background: var(--Whatsapp);
+}
+
+.div-social-bar ul li .icon-facebook:hover{
+    background: var(--facebook);
+}
+
+.div-social-bar ul li .icon-instagram:hover{
+    background: var(--instagram);
+}
+
+.div-social-bar ul li .icon-twitter:hover{
+    background: var(--twitter);
 }

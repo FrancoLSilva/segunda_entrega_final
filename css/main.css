@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: blue; }
+  header h1 {
+    color: red; }
+  header p {
+    color: black; }
+
+body nav {
+  color: white; }
+
+footer {
+  background-color: blue; }
+  footer .contact {
+    color: white; }
+  footer .redes {
+    color: white; }
